@@ -277,6 +277,9 @@ class MonacoEditor extends React.Component<Props, State> implements Editor {
     monaco.languages.registerDocumentFormattingEditProvider('sass', this);
     monaco.languages.registerDocumentFormattingEditProvider('vue', this);
     monaco.languages.registerDocumentFormattingEditProvider('graphql', this);
+    monaco.languages.registerDocumentFormattingEditProvider('html', this);
+    monaco.languages.registerDocumentFormattingEditProvider('markdown', this);
+    monaco.languages.registerDocumentFormattingEditProvider('json', this);
 
     // eslint-disable-next-line no-underscore-dangle
     window.CSEditor = {
